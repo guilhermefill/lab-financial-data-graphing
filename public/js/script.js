@@ -1,7 +1,15 @@
 document.addEventListener(
   "DOMContentLoaded",
-  () => {
-    console.log("lab-financial-data-graphing JS imported successfully!");
-  },
+  () => {},
   false
 );
+
+const fromDate = document.getElementById('from-date');
+
+const toDate = document.getElementById('to-date');
+
+const currency = document.getElementById('currency');
+
+const minPrice = document.getElementById('min-price');
+
+const maxPrice = document.getElementById('max-price');

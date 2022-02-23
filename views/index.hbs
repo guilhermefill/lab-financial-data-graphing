@@ -1,2 +1,28 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Bitcoint Price Index</h1>
+
+<div>
+    <h2>Filters</h2>
+    <div>
+        <label>From:
+            <input type="date" id="from-date" value="">
+        </label>
+        <label>To:
+            <input type="date" id="to-date" value="">
+        </label>
+    </div>
+    <div>
+        <label>Currency:</label>
+        <select name="currency" id="currency">
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="BRL">Brazilian Real</option>
+        </select>
+    </div>
+    <button id="filter-button">Filter</button>
+</div>
+<div>
+    <h2>Values</h2>
+    <p id="max-price"></p>
+    <p id="min-price"></p>
+</div>
+<canvas id="canvas"></canvas>
